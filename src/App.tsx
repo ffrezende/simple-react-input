@@ -21,7 +21,7 @@ export default function App(props: any) {
       <input type="text" onChange={(e) => setWord(e.target.value)} />
 
       {loading && <div>Loading....</div>}
-      {error && !loading && <div>Erro....</div>}
+      {error && !loading && <div>Word not found...</div>}
       {data && !loading && !error && (
         <div>{<WordDefinitionList wordDefinition={data} />}</div>
       )}
