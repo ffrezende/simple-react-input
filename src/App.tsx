@@ -3,7 +3,7 @@ import useLoadWordDefinition from "./common/useCases/useLoadWordDefinition";
 import useDebounce from "./common/hooks/useDebounce";
 import WordDefinitionList from "./common/components/wordList";
 
-export default function App(props: any) {
+export default function App() {
   const [word, setWord] = useState("");
 
   const { data, loading, error, loadWordDefinition } = useLoadWordDefinition();
