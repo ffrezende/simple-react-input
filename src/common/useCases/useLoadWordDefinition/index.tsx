@@ -7,7 +7,7 @@ const useLoadWordDefinition = () => {
   const [error, setError] = useState(null);
   const [data, setData] = useState<Array<Dictionary>>([]);
 
-  const loadWordDefinition = useCallback(async (param: string) => {
+  const loadWordDefinition = useCallback((param: string) => {
     setLoading(true);
     getDictionary(param)
       .then((response) => {

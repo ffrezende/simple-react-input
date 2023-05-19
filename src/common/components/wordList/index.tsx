@@ -6,7 +6,7 @@ interface Props {
 
 const WordDefinitionList = ({ wordDefinition }: Props) => {
   return (
-    <>
+    <div>
       {wordDefinition &&
         wordDefinition.map((word, index) => {
           return (
@@ -15,7 +15,7 @@ const WordDefinitionList = ({ wordDefinition }: Props) => {
             </div>
           );
         })}
-    </>
+    </div>
   );
 };
 
