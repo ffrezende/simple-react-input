@@ -15,7 +15,7 @@ export default function App() {
   }, [inputValue, loadWordDefinition]);
 
   return (
-    <div className="App">
+    <div className="App" data-testid="app-container">
       <h1>Hello React.</h1>
       <h2>Start editing to see some magic happen!</h2>
       <input type="text" onChange={(e) => setWord(e.target.value)} />
